@@ -70,7 +70,7 @@ if (!argv.format || argv.format === 'es') {
     ...baseConfig,
     external,
     output: {
-      file: 'dist/vue-sticky-sidebar.esm.js',
+      file: 'dist/vue3-sticky-sidebar.esm.js',
       format: 'esm',
       exports: 'named',
     },
@@ -104,9 +104,9 @@ if (!argv.format || argv.format === 'cjs') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-sticky-sidebar.ssr.js',
+      file: 'dist/vue3-sticky-sidebar.ssr.js',
       format: 'cjs',
-      name: 'VueStickySidebar',
+      name: 'Vue3StickySidebarr',
       exports: 'named',
       globals,
     },
@@ -133,9 +133,9 @@ if (!argv.format || argv.format === 'iife') {
     external,
     output: {
       compact: true,
-      file: 'dist/vue-sticky-sidebar.min.js',
+      file: 'dist/vue3-sticky-sidebar.min.js',
       format: 'iife',
-      name: 'VueStickySidebar',
+      name: 'Vue3StickySidebar',
       exports: 'named',
       globals,
     },

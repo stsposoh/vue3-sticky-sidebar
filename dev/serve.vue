@@ -7,15 +7,35 @@
     </header>
 
     <div class="container clearfix">
-      <vue-sticky-sidebar class="sidebar" containerSelector=".container" innerWrapperSelector='.sidebar__inner'>
-            <p>This is sticky column</p>
-      </vue-sticky-sidebar>
+      <Vue3StickySidebar
+        class="sidebar"
+        containerSelector=".container"
+        innerWrapperSelector=".sidebar__inner"
+      >
+        <p>This is sticky column</p>
+      </Vue3StickySidebar>
       <div id="content">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus id leo et aliquam. Proin consectetur ligula vel neque cursus laoreet. Nullam dignissim, augue at consectetur pellentesque, metus ipsum interdum sapien, quis ornare quam enim vel ipsum.</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tempus
+          id leo et aliquam. Proin consectetur ligula vel neque cursus laoreet.
+          Nullam dignissim, augue at consectetur pellentesque, metus ipsum
+          interdum sapien, quis ornare quam enim vel ipsum.
+        </p>
 
-        <p>In congue nunc vitae magna tempor ultrices. Cras ultricies posuere elit. Nullam ultrices purus ante, at mattis leo placerat ac. Nunc faucibus ligula nec lorem sodales venenatis. Curabitur nec est condimentum, blandit tellus nec, semper arcu. Nullam in porta ipsum, non consectetur mi. Sed pharetra sapien nisl. Aliquam ac lectus sed elit vehicula scelerisque ut vel sem. Ut ut semper nisl.</p>
+        <p>
+          In congue nunc vitae magna tempor ultrices. Cras ultricies posuere
+          elit. Nullam ultrices purus ante, at mattis leo placerat ac. Nunc
+          faucibus ligula nec lorem sodales venenatis. Curabitur nec est
+          condimentum, blandit tellus nec, semper arcu. Nullam in porta ipsum,
+          non consectetur mi. Sed pharetra sapien nisl. Aliquam ac lectus sed
+          elit vehicula scelerisque ut vel sem. Ut ut semper nisl.
+        </p>
 
-        <p>Curabitur rhoncus, arcu at placerat volutpat, felis elit sollicitudin ante, sed tempus justo nibh sed massa. Integer vestibulum non ante ornare eleifend. In vel mollis dolor.</p>
+        <p>
+          Curabitur rhoncus, arcu at placerat volutpat, felis elit sollicitudin
+          ante, sed tempus justo nibh sed massa. Integer vestibulum non ante
+          ornare eleifend. In vel mollis dolor.
+        </p>
       </div>
     </div>
 
@@ -25,18 +45,11 @@
   </div>
 </template>
 
-<script>
-import vueStickySidebar from "../src/vue-sticky-sidebar.vue";
-
-export default {
-  name: "ServeDev",
-  components: {
-    "vue-sticky-sidebar": vueStickySidebar
-  }
-};
+<script setup>
+import Vue3StickySidebar from "../src/vue3-sticky-sidebar.vue";
 </script>
 
-	<style>
+<style>
 *,
 *:before,
 *:after {

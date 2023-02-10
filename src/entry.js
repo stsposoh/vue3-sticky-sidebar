@@ -1,11 +1,11 @@
 // Import vue component
-import component from '@/vue-sticky-sidebar.vue';
+import component from '@/vue3-sticky-sidebar.vue';
 
 // install function executed by Vue.use()
-const install = function installVueStickySidebar(Vue) {
+const install = function installVue3StickySidebar(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component('VueStickySidebar', component);
+  Vue.component('Vue3StickySidebar', component);
 };
 
 // Create module definition for Vue.use()
