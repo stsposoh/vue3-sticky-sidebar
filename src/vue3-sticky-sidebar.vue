@@ -11,6 +11,10 @@ import { onMounted, ref } from "vue";
 import StickySidebar from "sticky-sidebar-v2";
 
 const props = defineProps({
+  scrollContainer: {
+    type: [String, Boolean],
+    default: false,
+  },
   rootClass: {
     type: String,
     default: "",
@@ -41,6 +45,7 @@ const stickySidebarRef = ref(null);
 
 onMounted(() => {
   const stickySidebar = new StickySidebar(stickySidebarRef.value, {
+    scrollContainer: props.scrollContainer,
     topSpacing: props.topSpacing,
     bottomSpacing: props.bottomSpacing,
     containerSelector: props.containerSelector,

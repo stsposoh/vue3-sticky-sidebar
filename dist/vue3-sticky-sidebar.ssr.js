@@ -4,6 +4,10 @@
 var script = {
   __name: 'vue3-sticky-sidebar',
   props: {
+    scrollContainer: {
+      type: [String, Boolean],
+      default: false,
+    },
     rootClass: {
       type: String,
       default: ""
@@ -34,6 +38,7 @@ var script = {
     const stickySidebarRef = vue.ref(null);
     vue.onMounted(() => {
       new StickySidebar(stickySidebarRef.value, {
+        scrollContainer: props.scrollContainer,
         topSpacing: props.topSpacing,
         bottomSpacing: props.bottomSpacing,
         containerSelector: props.containerSelector,
